@@ -82,7 +82,7 @@ function verif(){
     CIN number : ${cinNum.value}\n
     father's fullname : ${fatherName.value}\n
     father's phone number : ${fatherPhoneNum.value}\n
-    Mother's fullname : ${lastname.value}\n
+    Mother's fullname : ${motherName.value}\n
     parents country: ${country.value}\n
     Section : ${section.value}\n
     Baccalaureat Year : ${bacYear.value}\n
