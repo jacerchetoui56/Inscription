@@ -16,7 +16,7 @@ const form3 = document.querySelector(".form3")
 //start data
 
 // --form1
-const firstname = document.querySelector("#firstName")
+const fullname = document.querySelector("#fullname")
 const lastname = document.querySelector("#lastName")
 const phoneNum = document.querySelector("#phoneNum")
 const email = document.querySelector("#email")
@@ -77,8 +77,7 @@ function verif(){
     }
     if(step3){
         let conf = confirm(`Are you sure of these Informations\n
-        first name : ${firstname.value}\n
-    second name : ${lastname.value}\n
+        Fullname : ${fullname.value}\n
     phone number : ${phoneNum.value}\n
     CIN number : ${cinNum.value}\n
     father's fullname : ${fatherName.value}\n
