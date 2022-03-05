@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inscription</title>
+  </head>
+  <body>
+    <div class="thanks">
+      <h1>Thank you ! you got scammed :)</h1>
+    </div>
+    <div class="container">
+      <div class="progression">
+        <div class="stepone on">1</div>
+        <span class="onetotwo"></span>
+        <div class="steptwo">2</div>
+        <span class="twotothree"></span>
+        <div class="stepthree">3</div>
+      </div>
+
+      <div class="formulaire">
+        <div class="form1">
+          <h2>Informations of the candidat</h2>
+          <form action="">
+            <div class="in">
+              <label for="firstName"> fisrt-name :</label>
+              <input
+                id="firstName"
+                type="text"
+                placeholder="your fisrt-name"
+                required
+              />
+            </div>
+            <div class="in">
+              <label for="lastName"> last-name :</label>
+              <input
+                id="lastName"
+                type="text"
+                placeholder="your last-name"
+                required
+              />
+            </div>
+            <div class="in">
+              <label for="phoneNum">Phone number : </label>
+              <input
+                type="text"
+                placeholder="Phone numbre"
+                id="phoneNum"
+                required
+              />
+            </div>
+            <div class="in">
+              <label for="cinNum">CIN : </label>
+              <input type="text" placeholder="CIN" id="cinNum" />
+            </div>
+            <div class="in">
+              <label for="email">Email : </label>
+              <input id="email" type="text" placeholder="your email" required />
+            </div>
+            <input class="nextbtn" type="submit" value="Next" />
+          </form>
+        </div>
+        <div class="form2">
+          <form action="">
+            <h2>Informations of the candidat's parents</h2>
+            <form action="">
+              <div class="in">
+                <label for="fatherName"> Father's Fullname :</label>
+                <input
+                  id="fatherName"
+                  type="text"
+                  placeholder="Father's Fullname"
+                  required
+                />
+              </div>
+              <div class="in">
+                <label for="fatherPhoneNum">Father's Phone number : </label>
+                <input
+                  type="text"
+                  placeholder="Phone numbre"
+                  id="fatherPhoneNum"
+                  required
+                />
+              </div>
+              <div class="in">
+                <label for="motherName"> Mother's Fullname:</label>
+                <input
+                  id="motherName"
+                  type="text"
+                  placeholder="Mother's Fullname"
+                  required
+                />
+              </div>
+              <div class="in">
+                <label for="motherPhoneNum">Mother's Phone number : </label>
+                <input
+                  type="text"
+                  placeholder="Phone numbre"
+                  id="motherPhoneNum"
+                  required
+                />
+              </div>
+              <div class="in">
+                <label for="parentsCountry">Country : </label>
+                <input
+                  type="text"
+                  placeholder="country"
+                  id="parentsCountry"
+                  required
+                />
+              </div>
+              <input class="nextbtn" type="submit" value="Next" />
+            </form>
+          </form>
+        </div>
+        <div class="form3">
+          <form action="">
+            <h2>Informations of the candidat's education</h2>
+            <form action="">
+              <div class="in">
+                <label for="section">Section :</label>
+                <input
+                  id="section"
+                  type="text"
+                  placeholder="section (eg:maths)"
+                />
+              </div>
+              <div class="in">
+                <label for="bacYear">Baccalaureat year:</label>
+                <input id="bacYear" type="text" placeholder="Baccalaureat" />
+              </div>
+              <div class="in">
+                <label for="college">College : </label>
+                <input type="text" placeholder="college" id="college" />
+              </div>
+              <div class="in">
+                <label for="insNum">Inscription Num : </label>
+                <input type="text" placeholder="CIN" id="insNum" />
+              </div>
+
+              <input class="nextbtn" type="submit" value="Finish" />
+            </form>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

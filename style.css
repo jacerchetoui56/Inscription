@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #313638, #161925);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.progression {
+  margin-top: 40px;
+  position: relative;
+}
+
+.progression div {
+  display: inline;
+  border: solid 2px rgb(56, 56, 56);
+  border-radius: 50%;
+  padding: 10px 15px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.progression .stepone {
+  background-color: #009ab9;
+  border-color: rgb(56, 56, 56);
+}
+.progression span {
+  background-color: #009ab99c;
+  display: none;
+}
+.stepone.on,
+.steptwo.on,
+.stepthree.on {
+  padding: 20px 25px;
+}
+
+.formulaire h2 {
+  color: #00acd3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.formulaire label {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.progression div:first-child,
+.progression div:nth-child(3) {
+  margin-right: 50px;
+}
+.progression span {
+  position: absolute;
+  top: 9px;
+  height: 3px;
+  width: 54px;
+  background-color: rgb(56, 56, 56);
+}
+
+.progression .onetotwo {
+  left: 43px;
+}
+.progression .twotothree {
+  right: 64px;
+}
+
+.formulaire {
+  width: 100%;
+  margin-top: 100px;
+}
+.form1,
+.form2,
+.form3 {
+  width: 100%;
+  min-height: 50vh;
+}
+
+.form1 form,
+.form2 form,
+.form3 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.formulaire .in {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form1 input,
+.form2 input,
+.form3 input {
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 2px;
+  font-size: 20px;
+  width: 50%;
+  transition: 0.3s;
+}
+.form1 input:focus,
+.form2 input:focus,
+.form3 input:focus {
+  border-color: blue;
+  outline: none;
+}
+.form2,
+.form3 {
+  display: none;
+  opacity: 0;
+  animation: appear 1s ease forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0s;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nextbtn {
+  margin: 30px 0 40px 0;
+  padding: 25px 5px;
+  font-size: 35px;
+  background-color: #27d3db;
+}
+.nextbtn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 60%;
+  }
+  .container {
+    width: 90%;
+  }
+  .formulaire .in {
+    flex-direction: column;
+  }
+  .in input {
+    width: 80%;
+  }
+  .in label {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 45%;
+  }
+  .container {
+    width: 100%;
+  }
+  .in input {
+    width: 100%;
+  }
+}
+
+/* thanks */
+.thanks {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #313638, #161925);
+  display: none;
+  justify-content: center;
+  text-align: center;
+}
+.thanks h1 {
+  margin-top: 40%;
+  padding: 0 20px;
+  color: white;
+  font-family: "Work Sans";
+  font-size: 50px;
+}
