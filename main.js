@@ -25,7 +25,6 @@ const cinNum = document.querySelector("#cinNum")
 const fatherName = document.querySelector("#fatherName")
 const fatherPhoneNum = document.querySelector("#fatherPhoneNum")
 const motherName = document.querySelector("#motherName")
-const motherPhoneNum = document.querySelector("#motherPhoneNum")
 const country = document.querySelector("#parentsCountry")
 // --form3 
 const section = document.querySelector("#section")
@@ -85,7 +84,6 @@ function verif(){
     father's fullname : ${fatherName.value}\n
     father's phone number : ${fatherPhoneNum.value}\n
     Mother's fullname : ${lastname.value}\n
-    Mother's phone number: ${motherPhoneNum.value}\n
     parents country: ${country.value}\n
     Section : ${section.value}\n
     Baccalaureat Year : ${bacYear.value}\n
