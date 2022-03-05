@@ -77,7 +77,7 @@ function verif(){
     }
     if(step3){
         let conf = confirm(`Are you sure of these Informations\n
-        Fullname : ${fullname.value}\n
+    Fullname : ${fullname.value}\n
     phone number : ${phoneNum.value}\n
     CIN number : ${cinNum.value}\n
     father's fullname : ${fatherName.value}\n
