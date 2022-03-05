@@ -63,12 +63,7 @@ function verif(){
     form1.style.display = 'none'
     form2.style.display = 'block'
     steptwo.style.backgroundColor = '#009ab9'
-    let conf = confirm(`Are you sure of these Informations\n
-    first name : ${firstname.value}\n
-    second name : ${lastname.value}\n
-    phone number : ${phoneNum.value}\n
-    CIN number : ${cinNum.value}\n
-    `);
+  
     }
     if(step2 && step3==false) {
     steptwo.style.borderStyle = 'solid'
@@ -79,16 +74,19 @@ function verif(){
     form2.style.display = 'none'
     form3.style.display = 'block'
     stepthree.style.backgroundColor = '#009ab9' 
-    let conf = confirm(`Are you sure of these Informations\n
+    
+    }
+    if(step3){
+        let conf = confirm(`Are you sure of these Informations\n
+        first name : ${firstname.value}\n
+    second name : ${lastname.value}\n
+    phone number : ${phoneNum.value}\n
+    CIN number : ${cinNum.value}\n
     father's fullname : ${fatherName.value}\n
     father's phone number : ${fatherPhoneNum.value}\n
     Mother's fullname : ${lastname.value}\n
     Mother's phone number: ${motherPhoneNum.value}\n
     parents country: ${country.value}\n
-    `);
-    }
-    if(step3){
-        let conf = confirm(`Are you sure of these Informations\n
     Section : ${section.value}\n
     Baccalaureat Year : ${bacYear.value}\n
     College : ${college.value}\n
